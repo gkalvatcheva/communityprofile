@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Community Profiles Dashboard</title>
+    <!-- Bootstrap CSS -->
+    <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!-- MetisMenu CSS -->
+    <link href="../vendor/metisMenu/metisMenu.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="css/dashboards.css" rel="stylesheet">
+    <!-- Custom Fonts -->
+    <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+  <div class="content-wrapper">
+  <!-- Navigation -->
+  <nav class="navbar navbar-default navbar-fixed-top navbar-inverse" role="navigation" style="margin-bottom: 0">
+
+      <div class="navbar-header">
+          <a class="navbar-brand" href="index.html">
+            <img src="images/logo.svg" class="logo">
+            Community Profile <span class="title-hightlight">Dashboard</span></a>
+      </div>
+
+      <!-- start: export nav -->
+      <ul class="nav navbar-top-links navbar-right">
+                <li class="dropdown">
+                    <a class="dropdown-toggle export-button" data-toggle="dropdown" href="#">
+                      <img class="export-icon" src="images/icon-download-options.svg" alt="download options">
+                      Export Options
+                      <i class="fa fa-angle-down export-btn-arrow"></i>
+                    </a>
+                    <ul class="dropdown-menu export-items">
+                        <li>
+                            <a href="#">
+                                Export Option 1
+                            </a>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <a href="#">
+                                Export Option 2
+                            </a>
+                        </li>
+                    </ul>
+                    <!-- /.dropdown-tasks -->
+                </li>
+            </ul>
+      <!-- end: export nav -->
+  </nav>
+      <!-- end: navbar-header -->
+
+      <!-- start: sidebar -->
+      <div class="navbar-default sidebar" role="navigation">
+
+        <!-- start: accordion with stats  -->
+  <div id="accordion" class="indicators-panels" role="tablist" aria-multiselectable="true">
+  <div class="card">
+    <div class="card-header" role="tab" id="headingOne">
+        <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+          <span class="panel-header-icon">
+            <img src="images/icon-risk-score.svg">
+          </span>
+          <span class="panel-header-content">
+            <span class="panel-header-title">Risk Score / <span class="score good">2.7</span>
+            <span class="score-helptext">(1-10 score)</span></span>
+            <span class="panel-header-description">Index of various indicators</span>
+          </span>
+        </a>
+
+        <!-- start: modal trigger for risk score -->
+        <button type="button" class="btn-modal" data-toggle="modal" data-target="#risk-score">
+          <img src="images/icon-popup.svg">
+        </button>
+    </div>
+
+    <div id="collapseOne" class="collapse in" role="tabpanel" aria-labelledby="headingOne">
+      <div class="card-block">
+        <!-- start: risk score components -->
+        <div class="component-section">
+          <div class="col-md-3 component-label">Vulnerability
+            <div class="component-score">3.97</div>
+            <div class="score-helptext">(1-10 score)</div>
+          </div>
+          <div class="col-md-7">
+            <div class="component-scale">
+              <img class="scale-icon" src="images/icon-scale.svg">
+            </div>
+          </div>
+          <div class="col-sm-2 col-md-2 no-padding">
+            <!-- start: modal trigger for vulnerability -->
+            <button type="button" class="btn-modal" data-toggle="modal" data-target="#vulnerability">
+              <img src="images/icon-popup.svg">
+            </button>
+          </div>
+        </div>
+        <div class="component-section">
+          <div class="col-md-3 component-label">Hazards Exposure
+            <div class="component-score">2.10</div>
+            <div class="score-helptext">(1-10 score)</div>
+          </div>
+          <div class="col-md-7">
+            <div class="component-scale">
+              <img class="scale-icon" src="images/icon-scale.svg">
+            </div>
+          </div>
+          <div class="col-md-2 no-padding">
+            <!-- start: modal trigger for hazards exposure -->
+            <button type="button" class="btn-modal" data-toggle="modal" data-target="#hazards-exposure">
+              <img src="images/icon-popup.svg">
+            </button>
+          </div>
+        </div>
+        <div class="component-section">
+
+          <div class="col-md-3 component-label">Coping Capacity
+            <div class="component-score">2.69</div>
+            <div class="score-helptext">(1-10 score)</div>
+          </div>
+          <div class="col-md-7">
+            <div class="component-scale">
+              <img class="scale-icon" src="images/icon-scale.svg">
+            </div>
+          </div>
+          <div class="col-md-2 no-padding">
+            <!-- start: modal trigger for coping capacity -->
+            <button type="button" class="btn-modal" data-toggle="modal" data-target="#copingcapacity">
+              <img src="images/icon-popup.svg">
+            </button>
+          </div>
+
+        </div>
+        <!-- end: risk score components -->
+      </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab" id="headingTwo">
+      <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="true" aria-controls="collapseOne">
+        <span class="panel-header-icon">
+          <img src="images/icon-vulnerability.svg">
+        </span>
+        <span class="panel-header-content">
+          <span class="panel-header-title">Vulnerability Components / <span class="score medium">3.97</span></span>
+          <span class="panel-header-description">Description of vulnerability components</span>
+        </span>
+      </a>
+      <!-- start: modal trigger for vulnerability -->
+      <button type="button" class="btn-modal" data-toggle="modal" data-target="#vulnerability">
+        <img src="images/icon-popup.svg">
+      </button>
+    </div>
+    <div id="collapseTwo" class="collapse" role="tabpanel" aria-labelledby="headingTwo">
+      <div class="card-block">
+        Vulneratibility components set up as the ones above.
+      </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab" id="headingThree">
+      <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+        <span class="panel-header-icon">
+          <img src="images/icon-hazards.svg">
+        </span>
+        <span class="panel-header-content">
+          <span class="panel-header-title">Hazard Components / <span class="score bad">8.70</span></span>
+          <span class="panel-header-description">Description of hazard components</span>
+        </span>
+      </a>
+    </div>
+    <div id="collapseThree" class="collapse" role="tabpanel" aria-labelledby="headingThree">
+      <div class="card-block">
+        Hazard components set up as the ones above.
+      </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab" id="headingThree">
+      <a data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
+        <span class="panel-header-icon">
+          <img src="images/icon-coping-capacity.svg">
+        </span>
+        <span class="panel-header-content">
+          <span class="panel-header-title">Coping Capacity Components / <span class="score good">2.69</span></span>
+          <span class="panel-header-description">Description of capacity components</span>
+        </span>
+      </a>
+    </div>
+    <div id="collapseFour" class="collapse" role="tabpanel" aria-labelledby="headingFour">
+      <div class="card-block">
+        Coping capacity indicators set up as the ones above.
+      </div>
+    </div>
+  </div>
+</div>
+<!-- end: accordion with stats -->
+
+<!-- start: community profiles -->
+<div class="community-profiles-wrapper">
+    <div class="community-title">The Philippines</div>
+    <div class="count">
+        <span class="total-count"><span class="count-data">84</span> Provinces</span>
+      (<span class="filter-count">84</span> selected)
+    </div>
+    <!-- start: population count -->
+    <div class="row profile-item">
+      <div class="col col-md-6">
+        <img class="community-icon" src="images/icon-population.svg">
+        Population
+      </div>
+      <div class="col col-md-6">
+        <span>99,000</span> Inhabitants
+      </div>
+    </div>
+    <!-- end: population count -->
+
+    <!-- start: land area -->
+    <div class="row profile-item">
+      <div class="col col-md-6">
+        <img class="community-icon" src="images/icon-land-area.svg">
+        Land area
+      </div>
+      <div class="col col-md-6">
+        <span>302,000</span> per km2
+      </div>
+    </div>
+    <!-- end: land area -->
+
+    <!-- start: population density -->
+    <div class="row profile-item">
+      <div class="col col-md-6">
+        <img class="community-icon" src="images/icon-population-density.svg">
+        Population density
+      </div>
+      <div class="col col-md-6">
+        <span>331</span> per km2
+      </div>
+    </div>
+    <!-- end: population density -->
+
+
+</div>
+<!-- end: community profiles -->
+
+      </div>
+      <!-- end: sidebar -->
+
+      <!-- start: map -->
+      <div class="map-wrapper">
+
+        <!-- start: zoom navigation -->
+        <div class="zoom-level-nav col-md-7">
+        <div class="btn-group zoom-level" role="group">
+          <button type="button" class="btn btn-secondary btn-active">
+            <i class="fa fa-globe" aria-hidden="true"></i>
+            <span class="button-label">The Philippines</span>
+          </button>
+          <button type="button" class="btn btn-secondary">
+            <i class="fa fa-th-large" aria-hidden="true"></i>
+            <span class="button-label">Provinces</span>
+          </button>
+          <button type="button" class="btn btn-secondary">
+              <i class="fa fa-th" aria-hidden="true"></i>
+              <span class="button-label">Municipalities</span></button>
+          <button type="button" class="btn btn-secondary">
+            <i class="fa fa-arrows-alt" aria-hidden="true"></i>
+            <span class="button-label">Barangays</span></button>
+        </div>
+        </div>
+        <!-- end: zoom navigation -->
+
+      </div>
+      <!-- end: map -->
+
+</div>
+<!-- end: content wrapper -->
+
+      <!-- jQuery -->
+        <script src="lib/jquery/jquery.min.js"></script>
+      <!-- Bootstrap Core JavaScript -->
+        <script src="lib/bootstrap/js/bootstrap.min.js"></script>
+
+
+<!-- modal content -->
+
+<!-- start: risk score modal -->
+<div id="risk-score" class="modal sidebar-modal" role="dialog">
+  <div class="modal-dialog">
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">
+          <i class="fa fa-times-circle-o" aria-hidden="true"></i>
+        </button>
+        <h3 class="modal-title">Risk Score</h3>
+      </div>
+      <div class="modal-body">
+
+        <h4>Source link:</h4>
+        <p><a href="https://profiles.humanitariandata.nl/Index%20of%20various%20indicators:%20see%20underlying%20indicators%20for%20source%20link." target="_blank">Index of various indicators: see underlying indicators for source link.</a></p>
+
+        <h4>Description:</h4>
+        <p>This risk score is a 1-10 score which combines all underlying indicators into one index, comparable accross communities. It is made up of three main pillars: vulnerability, hazards exposure and coping capacity. The method and conceptual framework are derived from the INFORM model (www.inform-index.org), which applies it on a national level instead of a sub-national / community level.</p>
+
+      </div>
+    </div>
+  </div>
+</div>
+<!-- end: risk score modal -->
+
+
+</body>
+</html>
