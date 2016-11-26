@@ -38,13 +38,14 @@
                     <ul class="dropdown-menu export-items">
                         <li>
                             <a href="#">
-                                Export Option 1
+                              Export selected data (JSON)
                             </a>
                         </li>
                         <li class="divider"></li>
                         <li>
                             <a href="#">
-                                Export Option 2
+                              Export selected data (CSV)
+
                             </a>
                         </li>
                     </ul>
@@ -89,6 +90,7 @@
           </div>
           <div class="col-md-7">
             <div class="component-scale">
+              <span class="score-bar four"></span>
               <img class="scale-icon" src="images/icon-scale.svg">
             </div>
           </div>
@@ -106,12 +108,13 @@
           </div>
           <div class="col-md-7">
             <div class="component-scale">
+              <span class="score-bar two"></span>
               <img class="scale-icon" src="images/icon-scale.svg">
             </div>
           </div>
           <div class="col-md-2 no-padding">
             <!-- start: modal trigger for hazards exposure -->
-            <button type="button" class="btn-modal" data-toggle="modal" data-target="#hazards-exposure">
+            <button type="button" class="btn-modal" data-toggle="modal" data-target="#hazards">
               <img src="images/icon-popup.svg">
             </button>
           </div>
@@ -124,12 +127,13 @@
           </div>
           <div class="col-md-7">
             <div class="component-scale">
+              <span class="score-bar two inverse"></span>
               <img class="scale-icon" src="images/icon-scale.svg">
             </div>
           </div>
           <div class="col-md-2 no-padding">
             <!-- start: modal trigger for coping capacity -->
-            <button type="button" class="btn-modal" data-toggle="modal" data-target="#copingcapacity">
+            <button type="button" class="btn-modal" data-toggle="modal" data-target="#coping-capacity">
               <img src="images/icon-popup.svg">
             </button>
           </div>
@@ -157,7 +161,77 @@
     </div>
     <div id="collapseTwo" class="collapse" role="tabpanel" aria-labelledby="headingTwo">
       <div class="card-block">
-        Vulneratibility components set up as the ones above.
+
+        <!-- start: poverty incidence components -->
+        <div class="component-section">
+          <div class="col-md-3 component-label">Poverty Incidence
+            <div class="component-score">20.03%</div>
+          </div>
+          <div class="col-md-7">
+            <div class="component-scale">
+              <span class="score-bar two"></span>
+              <img class="scale-icon" src="images/icon-scale.svg">
+            </div>
+          </div>
+          <div class="col-md-2 no-padding">
+            <!-- start: modal trigger for poverty incidence -->
+            <button type="button" class="btn-modal" data-toggle="modal" data-target="#poverty-incidence">
+              <img src="images/icon-popup.svg">
+            </button>
+          </div>
+        </div>
+
+
+        <div class="component-section">
+          <div class="col-md-3 component-label">Income class
+            <div class="component-score">1.85</div>
+            <div class="score-helptext">(1-5 score)</div>
+          </div>
+          <div class="col-md-7">
+            <div class="component-scale">
+              <span class="score-bar two"></span>
+              <img class="scale-icon" src="images/icon-scale.svg">
+            </div>
+          </div>
+          <div class="col-md-2 no-padding">
+            <!-- start: modal trigger for income class -->
+            <button type="button" class="btn-modal" data-toggle="modal" data-target="#income-class">
+              <img src="images/icon-popup.svg">
+            </button>
+          </div>
+        </div>
+
+        <div class="component-section">
+          <div class="col-md-3 component-label">GDP per capita
+          </div>
+          <div class="col-md-7">
+            $<span class="score">1,269</span>
+          </div>
+          <div class="col-md-2 no-padding">
+            <!-- start: modal trigger for GDP -->
+            <button type="button" class="btn-modal" data-toggle="modal" data-target="#gdp">
+              <img src="images/icon-popup.svg">
+            </button>
+          </div>
+        </div>
+
+
+        <div class="component-section">
+          <div class="col-md-3 component-label">Human Development Index
+          </div>
+          <div class="col-md-7">
+            <span class="score">0.62</span>
+          </div>
+          <div class="col-md-2 no-padding">
+            <!-- start: modal trigger for human development -->
+            <button type="button" class="btn-modal" data-toggle="modal" data-target="#human-development">
+              <img src="images/icon-popup.svg">
+            </button>
+          </div>
+        </div>
+        <!-- end: Vulnerability components -->
+
+
       </div>
     </div>
   </div>
@@ -175,7 +249,123 @@
     </div>
     <div id="collapseThree" class="collapse" role="tabpanel" aria-labelledby="headingThree">
       <div class="card-block">
-        Hazard components set up as the ones above.
+        <!-- start: hazard components -->
+
+        <div class="component-section">
+          <div class="col-md-3 component-label">Flood risk
+            <div class="component-score">1.34</div>
+            <div class="score-helptext">(1-5 scale)</div>
+          </div>
+          <div class="col-md-7">
+            <div class="component-scale">
+              <span class="score-bar two"></span>
+              <img class="scale-icon" src="images/icon-scale.svg">
+            </div>
+          </div>
+          <div class="col-md-2 no-padding">
+            <!-- start: modal trigger for flood risk -->
+            <button type="button" class="btn-modal" data-toggle="modal" data-target="#flood-risk">
+              <img src="images/icon-popup.svg">
+            </button>
+          </div>
+        </div>
+
+
+        <div class="component-section">
+          <div class="col-md-3 component-label">Cyclone risk
+            <div class="component-score">2.73</div>
+            <div class="score-helptext">(1-5 scale)</div>
+          </div>
+          <div class="col-md-7">
+            <div class="component-scale">
+              <span class="score-bar four"></span>
+              <img class="scale-icon" src="images/icon-scale.svg">
+            </div>
+          </div>
+          <div class="col-md-2 no-padding">
+            <!-- start: modal trigger for cyclone risk -->
+            <button type="button" class="btn-modal" data-toggle="modal" data-target="#cyclone-risk">
+              <img src="images/icon-popup.svg">
+            </button>
+          </div>
+        </div>
+
+        <div class="component-section">
+          <div class="col-md-3 component-label">Landslide risk
+            <div class="component-score">1.81</div>
+            <div class="score-helptext">(1-5 scale)</div>
+          </div>
+          <div class="col-md-7">
+            <div class="component-scale">
+              <span class="score-bar two"></span>
+              <img class="scale-icon" src="images/icon-scale.svg">
+            </div>
+          </div>
+          <div class="col-md-2 no-padding">
+            <!-- start: modal trigger for landslide risk -->
+            <button type="button" class="btn-modal" data-toggle="modal" data-target="#landslide-risk">
+              <img src="images/icon-popup.svg">
+            </button>
+          </div>
+        </div>
+
+
+        <div class="component-section">
+          <div class="col-md-3 component-label">Earthquake exposure
+            <div class="component-score">0.80%</div>
+          </div>
+          <div class="col-md-7">
+            <div class="component-scale">
+              <span class="score-bar one"></span>
+              <img class="scale-icon" src="images/icon-scale.svg">
+            </div>
+          </div>
+          <div class="col-md-2 no-padding">
+            <!-- start: modal trigger for earthquake -->
+            <button type="button" class="btn-modal" data-toggle="modal" data-target="#earthquake">
+              <img src="images/icon-popup.svg">
+            </button>
+          </div>
+        </div>
+
+        <div class="component-section">
+          <div class="col-md-3 component-label">Tsunami exposure
+            <div class="component-score">0.73%</div>
+          </div>
+          <div class="col-md-7">
+            <div class="component-scale">
+              <span class="score-bar one"></span>
+              <img class="scale-icon" src="images/icon-scale.svg">
+            </div>
+          </div>
+          <div class="col-md-2 no-padding">
+            <!-- start: modal trigger for tsunami -->
+            <button type="button" class="btn-modal" data-toggle="modal" data-target="#tsunami">
+              <img src="images/icon-popup.svg">
+            </button>
+          </div>
+        </div>
+
+
+        <div class="component-section">
+          <div class="col-md-3 component-label">Cyclone surge exposure
+            <div class="component-score">0.15%</div>
+          </div>
+          <div class="col-md-7">
+            <div class="component-scale">
+              <span class="score-bar half"></span>
+              <img class="scale-icon" src="images/icon-scale.svg">
+            </div>
+          </div>
+          <div class="col-md-2 no-padding">
+            <!-- start: modal trigger for cyclone surge -->
+            <button type="button" class="btn-modal" data-toggle="modal" data-target="#cyclone-surge">
+              <img src="images/icon-popup.svg">
+            </button>
+          </div>
+        </div>
+
+        <!-- end: hazard components -->
       </div>
     </div>
   </div>
@@ -193,7 +383,68 @@
     </div>
     <div id="collapseFour" class="collapse" role="tabpanel" aria-labelledby="headingFour">
       <div class="card-block">
-        Coping capacity indicators set up as the ones above.
+        <!-- start: coping capacity components -->
+
+        <div class="component-section">
+          <div class="col-md-3 component-label">Number of medical facilities
+          </div>
+          <div class="col-md-7">
+            <span class="score">4,788</span>
+          </div>
+          <div class="col-md-2 no-padding">
+            <!-- start: modal trigger for medical facilities -->
+            <button type="button" class="btn-modal" data-toggle="modal" data-target="#medical-facilities">
+              <img src="images/icon-popup.svg">
+            </button>
+          </div>
+        </div>
+
+
+        <div class="component-section">
+          <div class="col-md-3 component-label">Number of medical personnel
+          </div>
+          <div class="col-md-7">
+            <span class="score">112,327</span>
+          </div>
+          <div class="col-md-2 no-padding">
+            <!-- start: modal trigger for medical personnel -->
+            <button type="button" class="btn-modal" data-toggle="modal" data-target="#medical-personnel">
+              <img src="images/icon-popup.svg">
+            </button>
+          </div>
+        </div>
+
+
+        <div class="component-section">
+          <div class="col-md-3 component-label">Good governance index
+          </div>
+          <div class="col-md-7">
+            <span class="score">105.44</span> (see info)
+          </div>
+          <div class="col-md-2 no-padding">
+            <!-- start: modal trigger for governance index -->
+            <button type="button" class="btn-modal" data-toggle="modal" data-target="#governance-index">
+              <img src="images/icon-popup.svg">
+            </button>
+          </div>
+        </div>
+
+        <!-- start: travel time -->
+        <div class="component-section">
+          <div class="col-md-3 component-label">Travel time to nearest city
+          </div>
+          <div class="col-md-7">
+            <span class="score">98 minutes</span>
+          </div>
+          <div class="col-md-2 no-padding">
+            <!-- start: modal trigger for travel time -->
+            <button type="button" class="btn-modal" data-toggle="modal" data-target="#travel-time">
+              <img src="images/icon-popup.svg">
+            </button>
+          </div>
+        </div>
+
+        <!-- end: coping capacity components -->
       </div>
     </div>
   </div>
@@ -208,7 +459,7 @@
       (<span class="filter-count">84</span> selected)
     </div>
     <!-- start: population count -->
-    <div class="row profile-item">
+    <div class="row profile-item" data-toggle="modal" data-target="#population">
       <div class="col col-md-6">
         <img class="community-icon" src="images/icon-population.svg">
         Population
@@ -220,7 +471,7 @@
     <!-- end: population count -->
 
     <!-- start: land area -->
-    <div class="row profile-item">
+    <div class="row profile-item" data-toggle="modal" data-target="#land-area">
       <div class="col col-md-6">
         <img class="community-icon" src="images/icon-land-area.svg">
         Land area
@@ -232,7 +483,7 @@
     <!-- end: land area -->
 
     <!-- start: population density -->
-    <div class="row profile-item">
+    <div class="row profile-item" data-toggle="modal" data-target="#population-density">
       <div class="col col-md-6">
         <img class="community-icon" src="images/icon-population-density.svg">
         Population density
@@ -268,11 +519,26 @@
               <i class="fa fa-th" aria-hidden="true"></i>
               <span class="button-label">Municipalities</span></button>
           <button type="button" class="btn btn-secondary">
-            <i class="fa fa-arrows-alt" aria-hidden="true"></i>
+            <i class="glyphicon glyphicon-resize-small" aria-hidden="true"></i>
             <span class="button-label">Barangays</span></button>
         </div>
         </div>
         <!-- end: zoom navigation -->
+
+        <!-- start: map popup -->
+        <div style="margin-left: 440px;margin-top: 300px;">
+          <!-- the above div and inline styles are only for placement -->
+          <div class="map-popup">
+            <div class="popup-header">Location name
+              <i class="fa fa-search-plus pull-right"></i>
+            </div>
+            <div class="popup-score">
+              <div class="score-label">Risk Score</div>
+              3.00
+            </div>
+          </div>
+        </div>
+        <!-- end: map popup -->
 
       </div>
       <!-- end: map -->
@@ -288,7 +554,7 @@
 
 <!-- modal content -->
 
-<!-- start: risk score modal -->
+<!-- start: modal risk score modal -->
 <div id="risk-score" class="modal sidebar-modal" role="dialog">
   <div class="modal-dialog">
     <!-- Modal content-->
@@ -311,7 +577,460 @@
     </div>
   </div>
 </div>
-<!-- end: risk score modal -->
+<!-- end: modal risk score modal -->
+
+<!-- start: modal vulnerability modal -->
+<div id="vulnerability" class="modal sidebar-modal" role="dialog">
+  <div class="modal-dialog">
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">
+          <i class="fa fa-times-circle-o" aria-hidden="true"></i>
+        </button>
+        <h3 class="modal-title">Vulnerability</h3>
+      </div>
+      <div class="modal-body">
+
+        <h4>Year source:</h4>
+        <p>Index of various indicators: see underlying indicators for source year.</p>
+
+        <h4>Source link:</h4>
+        <p><a href="https://profiles.humanitariandata.nl/Index%20of%20various%20indicators:%20see%20underlying%20indicators%20for%20source%20link." target="_blank">Index of various indicators: see underlying indicators for source link.</a></p>
+
+        <h4>Description:</h4>
+        <p>The vulnerability pillar contains information on vulnerability: relative socio-economic status, but also inequality and presence of specific vulnerable groups. You can inspect which indicators are included at present, by clicking through the carousel. More relevant indicators will be added once available.</p>
+
+      </div>
+    </div>
+  </div>
+</div>
+<!-- end: modal vulnerability modal -->
+
+<!-- start: modal hazards exposure modal -->
+<div id="hazards" class="modal sidebar-modal" role="dialog">
+  <div class="modal-dialog">
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">
+          <i class="fa fa-times-circle-o" aria-hidden="true"></i>
+        </button>
+        <h3 class="modal-title">Hazards Exposure</h3>
+      </div>
+      <div class="modal-body">
+
+        <h4>Year source:</h4>
+        <p>Index of various indicators: see underlying indicators for source year.</p>
+
+        <h4>Source link:</h4>
+        <p><a href="https://profiles.humanitariandata.nl/Index%20of%20various%20indicators:%20see%20underlying%20indicators%20for%20source%20link." target="_blank">Index of various indicators: see underlying indicators for source link.</a></p>
+
+        <h4>Description:</h4>
+        <p>The vulnerability pillar contains information on vulnerability: relative socio-economic status, but also inequality and presence of specific vulnerable groups. You can inspect which indicators are included at present, by clicking through the carousel. More relevant indicators will be added once available.</p>
+
+      </div>
+    </div>
+  </div>
+</div>
+<!-- end: modal hazards exposure modal -->
+
+<!-- start: modal capacity modal -->
+<div id="coping-capacity" class="modal sidebar-modal" role="dialog">
+  <div class="modal-dialog">
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">
+          <i class="fa fa-times-circle-o" aria-hidden="true"></i>
+        </button>
+        <h3 class="modal-title">Coping Capacity</h3>
+      </div>
+      <div class="modal-body">
+
+        <h4>Year source:</h4>
+        <p>Index of various indicators: see underlying indicators for source year.</p>
+
+        <h4>Source link:</h4>
+        <p><a href="https://profiles.humanitariandata.nl/Index%20of%20various%20indicators:%20see%20underlying%20indicators%20for%20source%20link." target="_blank">Index of various indicators: see underlying indicators for source link.</a></p>
+
+        <h4>Description:</h4>
+        <p>The vulnerability pillar contains information on vulnerability: relative socio-economic status, but also inequality and presence of specific vulnerable groups. You can inspect which indicators are included at present, by clicking through the carousel. More relevant indicators will be added once available.</p>
+
+      </div>
+    </div>
+  </div>
+</div>
+<!-- end: modal capacity modal -->
+
+
+<!-- start: modal poverty incidence -->
+<div id="poverty-incidence" class="modal sidebar-modal" role="dialog">
+  <div class="modal-dialog">
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">
+          <i class="fa fa-times-circle-o" aria-hidden="true"></i>
+        </button>
+        <h3 class="modal-title">Poverty Incidence</h3>
+      </div>
+      <div class="modal-body">
+
+        <h4>Year source:</h4>
+        <p>2012</p>
+
+        <h4>Source link:</h4>
+        <p><a href="http://data.gov.ph/catalogue/dataset/poverty--statistics/resource/1a834172-a6e5-46dd-8652-af69c7580fa2" target="_blank">http://data.gov.ph/catalogue/dataset/poverty--statistics/resource/1a834172-a6e5-46dd-8652-af69c7580fa2</a></p>
+
+        <h4>Description:</h4>
+        <p>Estimation of percentage of population living below the poverty line, per municipality.</p>
+
+      </div>
+    </div>
+  </div>
+</div>
+<!-- end: modal poverty incidence -->
+
+<!-- start: modal income class -->
+<div id="income-class" class="modal sidebar-modal" role="dialog">
+  <div class="modal-dialog">
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">
+          <i class="fa fa-times-circle-o" aria-hidden="true"></i>
+        </button>
+        <h3 class="modal-title">Income Class</h3>
+      </div>
+      <div class="modal-body">
+
+        <h4>Year source:</h4>
+        <p>2016</p>
+
+        <h4>Source link:</h4>
+        <p><a href="http://nap.psa.gov.ph/activestats/psgc/listmun.asp" target="_blank">http://nap.psa.gov.ph/activestats/psgc/listmun.asp</a></p>
+
+        <h4>Description:</h4>
+        <p>Government data which ranks each municipality on a scale from 1 to 5.</p>
+
+      </div>
+    </div>
+  </div>
+</div>
+<!-- end: modal income class -->
+
+<!-- start: modal GDP -->
+<div id="gdp" class="modal sidebar-modal" role="dialog">
+  <div class="modal-dialog">
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">
+          <i class="fa fa-times-circle-o" aria-hidden="true"></i>
+        </button>
+        <h3 class="modal-title">GDP Per Capita</h3>
+      </div>
+      <div class="modal-body">
+
+        <h4>Year source:</h4>
+        <p>2010</p>
+
+        <h4>Source link:</h4>
+        <p><a href="http://preview.grid.unep.ch/index.php?preview=data&events=socec&evcat=1&lang=eng" target="_blank">http://preview.grid.unep.ch/index.php?preview=data&events=socec&evcat=1&lang=eng</a></p>
+
+        <h4>Description:</h4>
+        <p>Derived from global grid dataset, which distributes regional GDP to a geospatial grid on the basis of population and whether the area is rural or urban. Transformed to GDP per capita, by relating it to the 2015 population census data.</p>
+
+      </div>
+    </div>
+  </div>
+</div>
+<!-- end: modal GDP -->
+
+
+<!-- start: modal human dev index -->
+<div id="human-development" class="modal sidebar-modal" role="dialog">
+  <div class="modal-dialog">
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">
+          <i class="fa fa-times-circle-o" aria-hidden="true"></i>
+        </button>
+        <h3 class="modal-title">Human Development Index</h3>
+      </div>
+      <div class="modal-body">
+
+        <h4>Year source:</h4>
+        <p>2012</p>
+
+        <h4>Source link:</h4>
+        <p><a href="https://psa.gov.ph/sites/default/files/HDI%20Tables%2C%20final%2015jan16_0.pdf" target="_blank">https://psa.gov.ph/sites/default/files/HDI%20Tables%2C%20final%2015jan16_0.pdf</a></p>
+
+        <h4>Description:</h4>
+        <p>Government data with estimation of Human Development Index on a provincial level.</p>
+
+      </div>
+    </div>
+  </div>
+</div>
+<!-- end: modal flood risk -->
+
+<!-- start: modal human dev index -->
+<div id="flood-risk" class="modal sidebar-modal" role="dialog">
+  <div class="modal-dialog">
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">
+          <i class="fa fa-times-circle-o" aria-hidden="true"></i>
+        </button>
+        <h3 class="modal-title">Flood Risk</h3>
+      </div>
+      <div class="modal-body">
+
+        <h4>Year source:</h4>
+        <p>2011</p>
+
+        <h4>Source link:</h4>
+        <p><a href="http://preview.grid.unep.ch/index.php?preview=data&events=floods&evcat=5&lang=eng" target="_blank">http://preview.grid.unep.ch/index.php?preview=data&events=floods&evcat=5&lang=eng</a></p>
+
+        <h4>Description:</h4>
+        <p>Global grid dataset by UNEP/Grid-Europe, which estimates the flood risk on a scale from 1 to 5.</p>
+
+      </div>
+    </div>
+  </div>
+</div>
+<!-- end: modal flood risk -->
+
+<!-- start: modal cyclone risk -->
+<div id="cyclone-risk" class="modal sidebar-modal" role="dialog">
+  <div class="modal-dialog">
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">
+          <i class="fa fa-times-circle-o" aria-hidden="true"></i>
+        </button>
+        <h3 class="modal-title">Cyclone Risk</h3>
+      </div>
+      <div class="modal-body">
+
+        <h4>Year source:</h4>
+        <p>2011</p>
+
+        <h4>Source link:</h4>
+        <p><a href="http://preview.grid.unep.ch/index.php?preview=data&events=cyclones&evcat=7&lang=eng" target="_blank">http://preview.grid.unep.ch/index.php?preview=data&events=cyclones&evcat=7&lang=eng</a></p>
+
+        <h4>Description:</h4>
+        <p>Global grid dataset by UNEP/Grid-Europe, which estimates the cyclone risk on a scale from 1 to 5.</p>
+
+      </div>
+    </div>
+  </div>
+</div>
+<!-- end: modal cyclone risk -->
+
+
+<!-- start: modal landslide risk -->
+<div id="landslide-risk" class="modal sidebar-modal" role="dialog">
+  <div class="modal-dialog">
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">
+          <i class="fa fa-times-circle-o" aria-hidden="true"></i>
+        </button>
+        <h3 class="modal-title">Landslide Risk</h3>
+      </div>
+      <div class="modal-body">
+
+        <h4>Year source:</h4>
+        <p>2011</p>
+
+        <h4>Source link:</h4>
+        <p><a href="http://preview.grid.unep.ch/index.php?preview=data&events=landslides&evcat=7&lang=eng" target="_blank">http://preview.grid.unep.ch/index.php?preview=data&events=landslides&evcat=7&lang=eng</a></p>
+
+        <h4>Description:</h4>
+        <p>Global grid dataset by UNEP/Grid-Europe, which estimates the landslide risk on a scale from 1 to 5.</p>
+
+      </div>
+    </div>
+  </div>
+</div>
+<!-- end: modal landslide risk -->
+
+<!-- start: modal tsunami risk -->
+<div id="tsunami" class="modal sidebar-modal" role="dialog">
+  <div class="modal-dialog">
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">
+          <i class="fa fa-times-circle-o" aria-hidden="true"></i>
+        </button>
+        <h3 class="modal-title">Tsunami Exposure</h3>
+      </div>
+      <div class="modal-body">
+
+        <h4>Year source:</h4>
+        <p>2007</p>
+
+        <h4>Source link:</h4>
+        <p><a href="http://preview.grid.unep.ch/index.php?preview=data&events=tsunamis&evcat=3&lang=eng" target="_blank">http://preview.grid.unep.ch/index.php?preview=data&events=tsunamis&evcat=3&lang=eng</a></p>
+
+        <h4>Description:</h4>
+        <p>Global grid dataset which estimates the expected number of people exposed to a tsunami annually. Divided by the 2015 population census data, to get the relative exposure instead of the absolute number of people affected.</p>
+
+      </div>
+    </div>
+  </div>
+</div>
+<!-- end: modal tsunami risk -->
+
+<!-- start: cyclone surge risk -->
+<div id="cyclone-surge" class="modal sidebar-modal" role="dialog">
+  <div class="modal-dialog">
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">
+          <i class="fa fa-times-circle-o" aria-hidden="true"></i>
+        </button>
+        <h3 class="modal-title">Cyclone Surge</h3>
+      </div>
+      <div class="modal-body">
+
+        <h4>Year source:</h4>
+        <p>2007</p>
+
+        <h4>Source link:</h4>
+        <p><a href="http://preview.grid.unep.ch/index.php?preview=data&events=surges&evcat=3&lang=eng" target="_blank">http://preview.grid.unep.ch/index.php?preview=data&events=surges&evcat=3&lang=eng</a></p>
+
+        <h4>Description:</h4>
+        <p>Global grid dataset which estimates the expected number of people exposed to surges caused by cyclones annually. In this case a surge height of 2 meters is taken as a minimum threshold. Divided by the 2015 population census data, to get the relative exposure instead of the absolute number of people affected.</p>
+
+      </div>
+    </div>
+  </div>
+</div>
+<!-- end: modal cyclone surge risk -->
+
+
+<!-- start: earthquake -->
+<div id="earthquake" class="modal sidebar-modal" role="dialog">
+  <div class="modal-dialog">
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">
+          <i class="fa fa-times-circle-o" aria-hidden="true"></i>
+        </button>
+        <h3 class="modal-title">Earthquake Risk</h3>
+      </div>
+      <div class="modal-body">
+
+        <h4>Year source:</h4>
+        <p>2007</p>
+
+        <h4>Source link:</h4>
+        <p><a href="http://preview.grid.unep.ch/index.php?preview=data&events=earthquakes&evcat=6&lang=eng" target="_blank">http://preview.grid.unep.ch/index.php?preview=data&events=earthquakes&evcat=6&lang=engs</a></p>
+
+        <h4>Description:</h4>
+        <p>Global grid dataset which estimates the expected number of people exposed to earthquakes annually. In this case a magnitude of 7 is taken for earthquakes to be included. Divided by the 2015 population census data, to get the relative exposure instead of the absolute number of people affected.</p>
+
+      </div>
+    </div>
+  </div>
+</div>
+<!-- end: modal earthquake -->
+
+
+<!-- start: population -->
+<div id="population" class="modal sidebar-modal" role="dialog">
+  <div class="modal-dialog">
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">
+          <i class="fa fa-times-circle-o" aria-hidden="true"></i>
+        </button>
+        <h3 class="modal-title">Population</h3>
+      </div>
+      <div class="modal-body">
+
+        <h4>Year source:</h4>
+        <p>2015</p>
+
+        <h4>Source link:</h4>
+        <p><a href="http://psa.gov.ph/content/highlights-philippine-population-2015-census-population" target="_blank">http://psa.gov.ph/content/highlights-philippine-population-2015-census-population</a></p>
+
+        <h4>Description:</h4>
+        <p>Population data from the most recent census in the Philippines (2015), collected on barangay-level.</p>
+
+      </div>
+    </div>
+  </div>
+</div>
+<!-- end: modal population -->
+
+<!-- start: land area -->
+<div id="land-area" class="modal sidebar-modal" role="dialog">
+  <div class="modal-dialog">
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">
+          <i class="fa fa-times-circle-o" aria-hidden="true"></i>
+        </button>
+        <h3 class="modal-title">Land Area</h3>
+      </div>
+      <div class="modal-body">
+
+        <h4>Year source:</h4>
+        <p>2015</p>
+
+        <h4>Source link:</h4>
+        <p>Computed measure</p>
+
+        <h4>Description:</h4>
+        <p>Area computed on the basis of the barangay-level administrative division.</p>
+
+      </div>
+    </div>
+  </div>
+</div>
+<!-- end: modal land area -->
+
+<!-- start: population density -->
+<div id="population-density" class="modal sidebar-modal" role="dialog">
+  <div class="modal-dialog">
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">
+          <i class="fa fa-times-circle-o" aria-hidden="true"></i>
+        </button>
+        <h3 class="modal-title">Population Density</h3>
+      </div>
+      <div class="modal-body">
+
+        <h4>Year source:</h4>
+        <p>2015</p>
+
+        <h4>Source link:</h4>
+        <p><a href="http://psa.gov.ph/content/highlights-philippine-population-2015-census-population" target="_blank">http://psa.gov.ph/content/highlights-philippine-population-2015-census-population</a></p>
+
+        <h4>Description:</h4>
+        <p>Population data from the most recent census in the Philippines (2015), collected on barangay-level. Divided by land area in square kilometers.</p>
+
+      </div>
+    </div>
+  </div>
+</div>
+<!-- end: modal population density -->
 
 
 </body>
