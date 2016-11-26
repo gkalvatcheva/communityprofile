@@ -143,6 +143,7 @@ body {
 .panel-header-title {
   color: #000000;
   display: block;
+  font-size: 13px;
 }
 .panel-header-description {
   color: #b5b5b5;
@@ -179,11 +180,86 @@ body {
   position: relative;
   width: 100%;
 }
-.component-score {
+.score-bar {
+  position: absolute;
+  height:12px;
+  left: 0;
 }
+
+/*score slides*/
+.score-bar.half{
+  background: #94c35c;
+  width: 5%;
+}
+.score-bar.one{
+  background: #94c35c;
+  width: 10%;
+}
+.score-bar.one.inverse {
+  background: #ef4949;
+}
+.score-bar.two{
+  background: #94c35c;
+  width: 20%;
+}
+.score-bar.two.inverse {
+  background: #ef4949;
+}
+.score-bar.three{
+  background: #94c35c;
+  width: 30%;
+}
+.score-bar.three.inverse {
+  background: #ef4949;
+}
+.score-bar.four{
+  background: #f1d121;
+  width: 40%;
+}
+.score-bar.five{
+  background: #f1d121;
+  width: 50%;
+}
+.score-bar.six{
+  background: #f1d121;
+  width: 60%;
+}
+.score-bar.seven{
+  background: #ef4949;
+  width: 70%;
+}
+.score-bar.seven.inverse {
+  background: #94c35c;
+}
+.score-bar.eight{
+  background: #ef4949;
+  width: 80%;
+}
+.score-bar.eight.inverse {
+  background: #94c35c;
+}
+.score-bar.nine{
+  background: #ef4949;
+  width: 90%;
+}
+.score-bar.nine.inverse {
+  background: #94c35c;
+}
+.score-bar.ten{
+  background: #ef4949;
+  border-radius: 5px;
+  width: 100%;
+}
+.score-bar.ten.inverse {
+  background: #94c35c;
+}
+
+
+
 .scale-icon {
   background: #397ab0;
   border-radius: 50%;
+  left: -20px;
   padding: 5px;
   position: absolute;
   top: -7px;
@@ -265,8 +341,7 @@ body {
 .sidebar-modal h4 {
   font-size: 14px;
   font-weight: bold;
-  margin-top: 20px;
 }
 .sidebar-modal p {
-  margin-bottom: 15px;
+  margin-bottom: 20px;
 }
