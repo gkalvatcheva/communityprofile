@@ -345,3 +345,23 @@ body {
 .sidebar-modal p {
   margin-bottom: 20px;
 }
+.map-popup {
+  background: #215784;
+  border-radius: 4px;
+  color: #ffffff;
+  padding: 15px;
+  width: 200px;
+}
+.map-popup .popup-header {
+  color: #daeaf7;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+}
+.map-popup .popup-score {
+  font-size: 35px;
+  text-transform: uppercase;
+}
+.map-popup .score-label {
+  color: #daeaf7;
+  font-size: 11px;
+}
