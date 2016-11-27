@@ -1,4 +1,5 @@
 body {
+  font-family: 'Open Sans', sans-serif;
 }
 .content-wrapper {
   height: 100%;
@@ -60,7 +61,7 @@ body {
   position: fixed;
   top: 51px;
   width: 380px;
-  z-index: 2;
+  z-index: 5;
 }
 .map-wrapper {
   background: #accfff;
@@ -75,7 +76,7 @@ body {
   position: absolute;
   left: 420px;
   margin-top: 65px;
-  z-index: 3;
+  z-index: 2;
 }
 .zoom-level {
   width: 100%;
@@ -364,4 +365,105 @@ body {
 .map-popup .score-label {
   color: #daeaf7;
   font-size: 11px;
+}
+
+/* slide out tabs */
+.slide-out-tab-province,
+.slide-out-tab-legend {
+  background: #ffffff;
+  margin-left: 378px;
+  min-height: 250px;
+}
+.slide-out-tab-province.open,
+.slide-out-tab-legend.open {
+  z-index: 4;
+}
+
+a.handle,
+a.handle-legend
+ {
+  -webkit-border-top-right-radius: 5px;
+  -webkit-border-bottom-right-radius: 5px;
+  -moz-border-radius-topright: 5px;
+  -moz-border-radius-bottomright: 5px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  background: #eeeeee;
+  color: #bbbbbb;
+  height: 150px;
+  width: 35px;
+  z-index: 3;
+}
+a.handle:hover {
+  color: #397ab0;
+  text-decoration: none;
+}
+.handle-label {
+  display: inline-block;
+  font-size: 13px;
+  margin-left: 4px;
+  margin-top: 26px;
+  white-space: nowrap;
+  width: 30px;
+
+  /*styles below are for text rotation*/
+  /* Safari */
+  -webkit-transform: rotate(90deg);
+  /* Firefox */
+  -moz-transform: rotate(90deg);
+  /* IE */
+  -ms-transform: rotate(-90deg);
+  /* Opera */
+  -o-transform: rotate(90deg);
+/ * Internet Explorer */
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+}
+.slide-out-tab-legend .handle-label {
+  margin-top: 60px;
+}
+.slideout-content-wrapper {
+  color: #888888;
+  padding: 20px;
+  width: 250px;
+}
+.slideout-content-wrapper h4{
+  color: #000000;
+  font-size: 15px;
+  font-weight: normal;
+  margin-bottom: 20px;
+}
+.selected-projects {
+  border-left: 1px solid #bbbbbb;
+  color: #888888;
+  font-size: 10px;
+  margin-left: 5px;
+  padding-left: 5px;
+}
+.options-list label{
+  font-size: 12px;
+  font-weight: normal;
+}
+.options-list .list-label {
+  margin-left: 5px;
+}
+.options-list ul,
+.select-options{
+  list-style: none;
+  padding-left: 0;
+}
+.select-options label {
+  font-weight: normal;
+}
+.select-options {
+  display: block;
+  padding-bottom: 25px;
+}
+.select-options li {
+  float: left;
+  font-size: 12px;
+  margin-right: 15px;
+}
+.select-options input[type=radio] {
+  height: 15px;
+  width: 15px;
 }
