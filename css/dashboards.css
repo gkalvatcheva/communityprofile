@@ -525,3 +525,38 @@ a.handle:hover {
   color: #ffffff;
   text-decoration: none;
 }
+
+/* responsive styles */
+@media only screen and (max-width: 768px) {
+  .sidebar {
+    padding: 10px;
+    position: fixed;
+    top: 51px;
+    width: 250px;
+  }
+  .component-scale {
+    margin-left: 5px;
+  }
+  .slide-out-tab-province,
+  .slide-out-tab-legend {
+    left: -380px !important;
+  }
+  .slide-out-tab-province.open,
+  .slide-out-tab-legend.open {
+    left: -130px !important;
+  }
+  .zoom-level-nav {
+    left: 290px;
+    width: 60%;
+  }
+  .zoom-level .button-label {
+    font-size: 10px;
+  }
+  .btn-secondary {
+    display: block;
+    text-align: center;
+  }
+  .btn-secondary i {
+    display: none;
+  }
+}
